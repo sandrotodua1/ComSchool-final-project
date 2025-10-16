@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My E-Shop — About Us</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet only -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">My E-Shop</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="products.html" class="nav__link">Shop All</a>
+        <a href="aboutus.html" class="nav__link nav__link--active" aria-current="page">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Us Section -->
+    <section class="about">
+      <div class="container">
+        <header class="section-header">
+          <h1 class="section-title">About Us</h1>
+        </header>
+
+        <article class="card about__text">
+          <p>
+            You can buy any kind of products in our E-shop starting from food and clothing to electronics and motorcycles.
+          </p>
+          <p>
+            We’re focused on great prices, fast delivery, and friendly support — so you can shop with confidence.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Contact Us</h2>
+          <span class="link">We’d love to hear from you</span>
+        </header>
+
+        <div class="grid grid--cards contact__info">
+          <article class="card contact__card">
+            <h3>Email</h3>
+            <p class="muted">support@my-eshop.example</p>
+          </article>
+          <article class="card contact__card">
+            <h3>Phone</h3>
+            <p class="muted">+1 (555) 000-1234</p>
+          </article>
+          <article class="card contact__card">
+            <h3>Address</h3>
+            <p class="muted">123 Market Street, Shop City</p>
+          </article>
+          <article class="card contact__card">
+            <h3>Hours</h3>
+            <p class="muted">Mon–Fri: 9:00–18:00</p>
+          </article>
+        </div>
+
+        <form class="card contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" class="input" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" class="input" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="input" rows="5" placeholder="How can we help?"></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© Comschool Final Project, Alexandre Todua</small>
+    </div>
+  </footer>
+</body>
+</html>

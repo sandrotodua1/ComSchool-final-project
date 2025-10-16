@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My E-Shop — Home</title>
+  <meta name="description" content="Landing page with a slider and frequently sold products.">
+   
+  <!-- Styles -->
+  <link rel="stylesheet" href= "styles.css"/>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  
+  
+</head>
+<body>
+ <!-- Page script -->
+  <script type="module" src="general.js"></script>
+    <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">My E-Shop</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="nav__link nav__link--active" aria-current="page">Home</a>
+        <a href="products.html" class="nav__link">Shop All</a>
+        <a href="aboutus.html" class="nav__link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Slider -->
+    <section class="hero" aria-label="Promotions">
+      <div class="container">
+        <div class="slider" role="region" aria-roledescription="carousel" aria-label="Featured banners">
+          <div class="slide slide--active" aria-hidden="false">
+            <div class="slide__content">
+              <h1 class="hero__title">Buy Anything you need </h1>
+              <p class="hero__subtitle">Quality picks, friendly prices.</p>
+              <a class="btn btn--primary" href="products.html">Shop now</a>
+            </div>
+          </div>
+          <div class="slide" aria-hidden="true">
+            <div class="slide__content">
+              <h2 class="hero__title">Weekly Deals</h2>
+              <p class="hero__subtitle">Save more. Smile more.</p>
+              <a class="btn btn--outline" href="products.html">Browse deals</a>
+            </div>
+          </div>
+          <div class="slide" aria-hidden="true">
+            <div class="slide__content">
+              <h2 class="hero__title">New Arrivals</h2>
+              <p class="hero__subtitle">Fresh drops every week.</p>
+              <a class="btn btn--ghost" href="products.html">See what's new</a>
+            </div>
+          </div>
+
+          <button class="slider__control slider__control--prev" aria-label="Previous slide">&#10094;</button>
+          <button class="slider__control slider__control--next" aria-label="Next slide">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Sold -->
+    <section class="popular">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Frequently Sold Products</h2>
+          <a class="link" href="products.html">View all</a>
+        </header>
+
+        <div id="popular-grid" class="grid grid--cards" aria-live="polite"></div>
+        <div id="popular-loading" class="loading">Loading products…</div>
+        <div id="popular-error" class="error sr-only" role="alert" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+     <small>© Comschool Final Project, Alexandre Todua</small>
+    </div>
+  </footer>
+
+  
+</body>
+</html>

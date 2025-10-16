@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My E-Shop — Product</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Single stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+ 
+<body>
+   <script type="module" src="product-details.js"></script>   
+    <!-- Header / Navigation (same as other pages) -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">My E-Shop</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="products.html" class="nav__link">Shop All</a>
+        <a href="aboutus.html" class="nav__link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="popular">
+      <div class="container">
+        <a class="link" href="products.html">← Back to all products</a>
+
+        <div id="product-detail" class="product-detail__content" aria-live="polite"></div>
+        <div id="detail-loading" class="loading">Loading product…</div>
+        <div id="detail-error" class="error sr-only" role="alert" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>©  Comschool Final Project, Alexandre Todua</small>
+    </div>
+  </footer>
+
+ 
+</body>
+</html>

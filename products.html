@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My E-Shop — All Products</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Single stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script type="module" src="products.js"></script> 
+  <!-- Header / Navigation (same as index) -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">My E-Shop</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="products.html" class="nav__link nav__link--active" aria-current="page">Shop All</a>
+        <a href="aboutus.html" class="nav__link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="popular">
+      <div class="container">
+        <header class="section-header">
+          <h1 class="section-title">All Products</h1>
+          <label>
+            <span class="sr-only">Sort</span>
+            <select id="sort" class="select">
+              <option value="default">Sort: Default</option>
+              <option value="price-asc">Price: Low → High</option>
+              <option value="price-desc">Price: High → Low</option>
+              <option value="rating-desc">Rating: High → Low</option>
+            </select>
+          </label>
+          <label>
+           <span class="sr-only">Filter by Category</span>
+           <select id="category-filter" class="select">
+           <option value="all">All Categories</option>
+          </select>
+          </label>
+
+        </header>
+
+        <div id="product-list" class="grid grid--cards" aria-live="polite"></div>
+        <div id="list-loading" class="loading">Loading products…</div>
+        <div id="list-error" class="error sr-only" role="alert" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© Comschool Final Project, Alexandre Todua</small>
+    </div>
+  </footer>
+
+ 
+</body>
+</html>
